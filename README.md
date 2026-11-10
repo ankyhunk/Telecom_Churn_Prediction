@@ -1,6 +1,6 @@
 # Telecom Churn Prediction
 
-Predicting which telecom customers are likely to **churn** (switch to another operator), and finding the main indicators of churn. Kaggle competition from the upGrad & IIIT-B Machine Learning programme.
+Predicting which telecom customers are likely to **churn** (switch to another operator), and finding the main indicators of churn.
 
 ## Problem statement
 
@@ -20,12 +20,10 @@ Customers usually do not decide to switch to another competitor instantly, but r
 
 ## Dataset
 
-From the Kaggle competition *kagglelabstest2021* (not included in this repository):
-
 | File | Rows | Description |
 |---|---|---|
 | `train.csv` | 69,999 | Customer usage over June–August, plus the `churn_probability` label |
-| `test.csv` | 30,000 | Same features, no label (used for the submission) |
+| `test.csv` | 30,000 | Same features, no label |
 | `sample.csv` | 30,000 | Submission format: `id`, `churn_probability` |
 | `data_dictionary.csv` | 36 | Description of the columns |
 
@@ -57,7 +55,7 @@ A drop in usage and recharges during the action month is the clearest early warn
 ## How to run
 
 ```bash
-pip install numpy pandas matplotlib seaborn missingno scikit-learn xgboost
+pip install numpy pandas matplotlib seaborn scikit-learn xgboost
 jupyter notebook "Telecom Churn Prediction.ipynb"
 ```
 
@@ -65,8 +63,4 @@ Download the competition files from Kaggle and set the paths in the "Loading dep
 
 ## Technologies
 
-Python, Jupyter Notebook, pandas, NumPy, Matplotlib, seaborn, missingno, scikit-learn, XGBoost
-
-## Acknowledgements
-
-Based on the starter notebook by Akshay Sehgal for the upGrad & IIIT-B Machine Learning programme.
+Python, Jupyter Notebook, pandas, NumPy, Matplotlib, seaborn, scikit-learn, XGBoost
